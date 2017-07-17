@@ -37,7 +37,7 @@ module.exports = function (grunt) {
             grunt.log.writeln('Deploying to instances: %s', chalk.cyan(instanceNames));
 
             for (var j = 0; j < instanceNames.length; j++) {
-                grunt.task.run('ec2-deploy:' + instanceNames[i]);
+                grunt.task.run('ec2-deploy:' + instanceNames[j]);
             }
 
             done();
